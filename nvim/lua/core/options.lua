@@ -1,0 +1,19 @@
+local api = vim.api
+local g = vim.g
+local opt = vim.opt
+
+opt.number = true
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.smartindent = true
+opt.relativenumber = true
+opt.mouse = "a"
+opt.ignorecase = true
+opt.termguicolors = true
+opt.list = true
+g.loaded_netrw = 1
+g.loaded_netrwPlugin = 1
+g.mapleader = " "
+g.vimtex_view_method = "zathura"
+g.vimtex_compiler_method = "latexmk"
