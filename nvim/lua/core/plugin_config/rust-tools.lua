@@ -11,5 +11,12 @@ rt.setup({
       client.server_capabilities.signatureHelpProvider = false
       on_attach(client,bufnr)
     end,
+    settings = {
+      ["rust-analyzer"] = {
+        checkOnSave = {
+          command = "clippy",
+        },
+      },
+    },
   },
 })

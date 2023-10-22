@@ -101,4 +101,11 @@ return require('packer').startup(function(use)
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use { "folke/neodev.nvim"}
   use { 'simrat39/rust-tools.nvim' }
+  use { 'Saecki/crates.nvim' }
+  use { 'folke/trouble.nvim' }
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 end)
